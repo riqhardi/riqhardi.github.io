@@ -1,0 +1,390 @@
+: root {
+  --f1-color: #fff;
+  --f2-color: #000;
+  --f3-color: rgba(0.8);
+  --f4-color: rgba(0.6);
+  --f5-color: #0099cc;
+  --f6-color: #99cee6;
+
+  --bg1-color: #fff;
+  --bg2-color: #000;
+  --bg3-color: #33ccff;
+  --bg4-color: #33cc33;
+  --bg5-color: #0099cc;
+  --bg6-color: rgba(0, 0, 0, 0.4);
+  --bg7-color: rgba(0, 0, 0, 0.2);
+  --glass-bg: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3)
+  );
+  --C-lg-bg: linear-gradient(45deg, #ff3399, #ff9933);
+
+  --xxxl-fs: 2.2rem;
+  --xxl-fs: 1.8rem;
+  --xl-fs: 1.6rem;
+  --l-fs: 1.4rem;
+  --m-fs: 1.2rem;
+  --s-fs: 1.1rem;
+  --xs-fs: 1rem;
+
+  --m-2-5: 2.5rem;
+  --m-1-8: 1.8rem;
+  --m-1-5: 1.5rem;
+  --m-0-6: 0.6rem;
+  --m-0-5: 0.5rem;
+  --m-0-3: 0.3rem;
+
+  --p-2-5: 2.5rem;
+  --p-1-5: 1.5rem;
+  --p-1-0: 1rem;
+  --p-0-8: 0.8rem;
+  --p-0-5: 0.5rem;
+  --p-0-4: 0.4rem;
+  --p-0-3: 0.3rem;
+}
+
+.main_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/Home.gif");
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  position: relative;
+  display: grid;
+  top: 5px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header header"
+    "userProfile userDetails"
+    "work_skills timeline_about"
+    "work_skills timeline_about";
+  width: 85%;
+  height: 70vh;
+  background: #fff;
+  padding: 0.5rem;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 25px rgba(0, 0, 0, 0.08);
+  grid-gap: 0.5rem;
+}
+
+.header {
+  grid-area: header;
+}
+
+.userProfile {
+  grid-area: userProfile;
+}
+
+.work_skills {
+  grid-area: work_skills;
+}
+
+.userDetails {
+  grid-area: userDetails;
+}
+
+.timeline_about {
+  grid-area: timeline_about;
+}
+
+.container .card {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(3rem);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem;
+}
+
+.container header {
+  padding: 0 2.5rem;
+}
+
+.container header .brandLogo {
+  display: flex;
+  align-items: center;
+}
+
+.container header .brandLogo figure img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.container header .brandLogo span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+.container .userProfile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.container .userProfile .profile figure img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.container .work_skills {
+  padding: 1rem;
+}
+
+.work_skills .work .heading,
+.work_skills .skills .heading {
+  position: relative;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.work_skills .work .heading::before,
+.work_skills .skills .heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0.1rem;
+  width: 88%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.work_skills .work .primary,
+.work_skills .work .secondary {
+  position: relative;
+}
+
+.work_skills .work .primary h1,
+.work_skills .work .secondary h1 {
+  font-size: 1rem;
+  color: rgba(0.8);
+  margin-bottom: 0.6rem;
+}
+
+.work_skills .work .primary span,
+.work_skills .work .secondary span {
+  position: absolute;
+  top: 0;
+  right: 3rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #0099cc;
+  background: #e6f2ff;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.work_skills .work .primary p,
+.work_skills .work .secondary p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.6rem;
+}
+
+.work_skills .skills ul li {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0.5rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.work_skills .skills ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 0.2rem;
+  background: #33ccff;
+  animation: skills 8s linear infinite;
+  animation-delay: calc(-2s * var(--i));
+}
+
+@keyframes skills {
+    0% {
+        width: 50%;
+        filter: hue-rotate(180deg);
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width 50%;
+        filter: hue-rotate(0)
+    }
+}
+
+.userDetails {
+    position: relative;
+    padding: 1.5rem 2.5rem;
+}
+
+.userDetails .userName h1 {
+    font-size: 2rem;   
+}
+
+.userDetails .userName .map {
+    position: absolute;
+    top: 2rem;
+    left: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userDetails .userName .map .ri {
+    margin-right: 0.3rem;
+    font-size: 1rem;
+}
+
+.userDetails .userName .map span {
+    font-size: 1rem;
+    color: rgba(0.8);
+    font-weight: 700;
+}
+
+.userDetails .userName p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0099cc;
+    margin-bottom: 1.8rem;
+}
+
+.userDetails .btns ul,
+.userDetails .btns ul li {
+    display: flex;
+    align-items: center;
+}
+
+.userDetails .btns ul li {
+    margin-right: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.userDetails .btns ul li .ri {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.userDetails .btns ul li a {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.userDetails .btns ul .active {
+    background: #e6f2ff;
+    padding: 0.5rem 1.5rem;
+}
+
+.userDetails .btns ul .active a,
+.userDetails .btns ul .active .ri {
+    color: #0099cc;
+}
+
+.timeline_about {
+    padding: 2.5rem;
+}
+
+.timeline_about .tabs ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.timeline_about .tabs ul::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.timeline_about .tabs ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+    padding-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+.timeline_about .tabs ul li span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.timeline_about .tabs ul li .ri {
+    margin-right: 0.5rem;
+}
+
+.timeline_about .tabs ul .active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #0099cc;
+}
+
+.timeline_about .contact_info .heading,
+.timeline_about .basic_info .heading {
+    font-size: 1rem;
+    color: rgba(0.6);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.timeline_about .contact_info ul,
+.timeline_about .basic_info ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.timeline_about .contact_info ul li,
+.timeline_about .basic_info ul li {
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.timeline_about .contact_info ul li h1,
+.timeline_about .basic_info ul li h1 {
+    font-weight: 500;
+    font-size: 1rem;
+    min-width: 12rem;
+}
+
+.timeline_about .contact_info ul li span,
+.timeline_about .basic_info ul li span {
+    font-size: 1rem;
+}
+
+.timeline_about .contact_info ul .phone span,
+.timeline_about .contact_info ul .mail span,
+.timeline_about .contact_info ul .site span {
+    color: #0099cc;
+}
