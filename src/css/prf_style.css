@@ -50,7 +50,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/Home.jpg");
+  background-image: url("../assets/Home.gif");
   background-size: cover;
   background-position: center;
 }
@@ -66,7 +66,6 @@
     "work_skills timeline_about";
   width: 85%;
   height: 70vh;
-  background: #fff;
   padding: 0.5rem;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 25px rgba(0, 0, 0, 0.08);
   grid-gap: 0.5rem;
@@ -98,7 +97,7 @@
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.3)
   );
-  backdrop-filter: blur(3rem);
+  backdrop-filter: blur(0.5rem);
   border-radius: 0.5rem;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
   padding: 0.5rem;
@@ -122,6 +121,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   margin-left: 0.5rem;
+  color: #fff;
 }
 
 .container .userProfile {
@@ -130,7 +130,6 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  background: none;
   backdrop-filter: none;
   box-shadow: none;
 }
@@ -152,6 +151,7 @@
   color: rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .work_skills .work .heading::before,
@@ -184,7 +184,7 @@
   right: 3rem;
   font-weight: 700;
   font-size: 1rem;
-  color: #0099cc;
+  color: #000;
   background: #e6f2ff;
   padding: 0.4rem 1rem;
   border-radius: 0.4rem;
@@ -194,7 +194,7 @@
 .work_skills .work .secondary p {
   margin-bottom: 1rem;
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: #fff;
   line-height: 1.6rem;
 }
 
@@ -203,7 +203,7 @@
   font-size: 1rem;
   line-height: 1rem;
   margin: 0.5rem;
-  color: #000;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -266,7 +266,7 @@
 .userDetails .userName p {
     font-size: 1rem;
     font-weight: 700;
-    color: #0099cc;
+    color: #fff;
     margin-bottom: 1.8rem;
 }
 
@@ -299,7 +299,7 @@
 
 .userDetails .btns ul .active a,
 .userDetails .btns ul .active .ri {
-    color: #0099cc;
+    color: #000;
 }
 
 .timeline_about {
@@ -386,5 +386,5 @@
 .timeline_about .contact_info ul .phone span,
 .timeline_about .contact_info ul .mail span,
 .timeline_about .contact_info ul .site span {
-    color: #0099cc;
+    color: #fff;
 }
