@@ -1,31 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile</title>
-  <link rel="stylesheet" href="css/profile_style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/prf_style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <section class="about">
-    <div class="main">
-        <img src="assets/riki.png" alt="">
-        <div class="about-text">
-            <h1>About Me</h1>
-            <h5>Technician<span> & Administrator</span></h5>
-            <p>Saya berpengalaman di bidang CCTV, PABX dan Networking dan Juga Sebagai Operator PDDIKTI pada sebuah Universitas di Bandung.
-            Saya Menghargai Kejelasan, Empati, dan Integritas di atas Segalanya. 
-            Cita Cita ini memandu pendekatan saya terhadap pemecahan masalah dan kehidupan secara umum.</p>
-            <button type="button">Contact</button>
-        </div>
-
-    </div>
-  </section>
+	<span class="main_bg"></span>
+	<ul class="navigation">
+		<li><a href="/public/index.html">Home</a></li>
+		<li><a href="/src/Profile.html">Profile</a></li>
+		<li><a href="/src/Experience.html">Experience</a></li>
+		<li><a href="/src/Project.html">Project</a></li>
+		<li><a href="/src/Contact.html">Contact</a></li>
+		<span class="toggleMenu"></span>
+	</ul>
+	<div class="container">
+		<header class="header">
+			<div class="brandLogo">
+				<figure><img src="./assets/rsh.png" alt="logo" width="40px" height="40px"></figure>
+				<span>Riki Hardiansyah</span>
+			</div>
+		</header>
+		<section class="userProfile card">
+			<div class="profile">
+				<figure><img src="./assets/riki.png" alt="profile" width="250px" height="250px"></figure>
+			</div>
+		</section>
+		<section class="work_skills card">
+			<div class="work">
+				<h1 class="heading">Work</h1>
+				<div class="primary">
+					<h1>Universitas Bandung</h1>
+					<span>Primary</span>
+					<p>Cipagalo Girang <br> Bandung, Jawa Barat</p>
+				</div>
+				<div class="secondary">
+					<h1>Freelance</h1>
+					<span>Secondary</span>
+					<p>Muararajeun Lama <br> Bandung, Jawa Barat</p>
+				</div>
+			</div>
+			<div class="skills">
+				<h1 class="heading">Skills</h1>
+				<ul style="list-style: none;">
+					<li style="--i:0">Networking, CCTV, & PABX</li>
+					<li style="--i:1">Computer Hardware & Software</li>
+					<li style="--i:2">Web Design</li>
+					<li style="--i:3">Admin</li>
+				</ul>
+			</div>
+		</section>
+		<section class="userDetails card">
+			<div class="userName">
+				<h1 class="name">Riki Hardiansyah</h1>
+				<div class="map">
+					<ion-icon name="map-outline" class="ri"></ion-icon>
+					<span>Bandung, Jawa Barat</span>
+				</div>
+				<p>IT Support & Web Developer</p>
+				</div>
+				<div class="btns">
+					<ul>
+						<li class="sendMsg active" >
+							<ion-icon name="chatbubble-ellipses-outline" class="ri"></ion-icon>
+							<a href="#">WhatsApp</a>
+						</li>
+						<li class="sendMsg active" >
+							<ion-icon name="mail-unread-outline" class="ri"></ion-icon>
+							<a href="#">Mail</a>
+						</li>
+						<li class="sendMsg active" >
+							<ion-icon name="logo-instagram" class="ri"></ion-icon>
+							<a href="#">Instagram</a>
+						</li>
+					</ul>
+				</div>
+		</section>
+		<section class="timeline_about card">
+			<div class="tabs">
+				<ul>
+				<li class="timeline">
+					<ion-icon name="time-outline" class="ri"></ion-icon>
+					<span>Timeline</span>
+				</li>
+				<li class="about active">
+					<ion-icon name="person-outline" class="ri"></ion-icon>
+					<span>About</span>
+				</li>
+				</ul>
+			</div>
+			<div class="contact_info">
+				<h1 class="heading">Contact Information</h1>
+				<ul>
+					<li class="phone">
+						<h1 class="label">Phone:</h1>
+						<span class="info">+6281313333312</span>
+					</li>
+					<li class="Address">
+						<h1 class="label">Address:</h1>
+						<span class="info">Bandung</span>
+					</li>
+					<li class="mail">
+						<h1 class="label">Mail:</h1>
+						<span class="info">riq.hardi@gmail.com</span>
+					</li>
+					<li class="site">
+						<h1 class="label">Site:</h1>
+						<span class="info">https://riqhardi.github.io/</span>
+					</li>
+				</ul>
+			</div>
+			<div class="basic_info">
+				<h1 class="heading">Basic Information</h1>
+				<ul>
+					<li class="birthday">
+					<h1 class="label">Birthday</h1>
+						<span class="info">May 21, 1988</span>
+					</li>
+					<li class="sex">
+						<h1 class="label">Gender</h1>
+						<span class="info">Male</span>
+					</li>
+					<li class="birthday">
+						<h1 class="label">Religion</h1>
+						<span class="info">Islam</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<script>
+		let toggleMenu = document.querySelector('.toggleMenu');
+		let navigation = document.querySelector('.navigation');
+		toggleMenu.onclick = function(){
+			navigation.classList.toggle('active');
+		}
+	</script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
